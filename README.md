@@ -11,7 +11,7 @@ Vengo de Marketing y Producto, y aplico un framework de **Behavioral Design** a 
 **[Unit Economics Calculator](https://unit-economics-ruddy.vercel.app)** — Calculadora multi-vertical (SaaS, Fintech, Ecommerce, Proptech, Edtech) para simular CAC, LTV y punto de equilibrio, con reportes en PDF y seguimiento histórico.
 `Vite · React · TypeScript · Tailwind · Recharts · Supabase`
 
-**[VOC Hub](https://github.com/jmarroncle/voc-hub)** — Sistema de feedback por voz para agencias de marketing: los clientes graban un audio en vez de llenar un formulario, la IA lo transcribe y estructura en insights accionables.
+**[VOC Hub](https://github.com/jmarroncle/voc-hub)** — Prototipo de UX para reemplazar la encuesta post-venta por un mensaje de voz de hasta 2 minutos. En desarrollo: transcripción por IA y dashboard con datos reales.
 `Next.js · React`
 
 **Sistema de agentes de marketing** — Un "sistema operativo" de 30+ agentes de IA (Claude Code) que automatiza research, contenido, prospección B2B y seguimiento comercial para una agencia de growth marketing, con un CRM propio en producción.
