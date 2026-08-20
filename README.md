@@ -8,6 +8,9 @@ Vengo de Marketing y Producto, y aplico un framework de **Behavioral Design** a 
 
 ### Lo que estoy construyendo
 
+**[Signal IQ](https://signal-iq-jet.vercel.app)** — Plataforma que unifica VOC (Voice of Customer) y Lead Scoring para equipos de marketing que lanzan productos de inversión: score de lead en 4 dimensiones + clasificación del lenguaje real del cliente + acción recomendada, en un CRM propio.
+`Vite · React · TypeScript · Supabase · Vercel · Claude API`
+
 **[Unit Economics Calculator](https://unit-economics-ruddy.vercel.app)** — Calculadora multi-vertical (SaaS, Fintech, Ecommerce, Proptech, Edtech) para simular CAC, LTV y punto de equilibrio, con reportes en PDF y seguimiento histórico.
 `Vite · React · TypeScript · Tailwind · Recharts · Supabase`
 
