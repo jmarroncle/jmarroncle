@@ -1,0 +1,85 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Moodboards · Comunidades de Taquión</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#f3f3f0;color:#1b1b1b}
+.wrap{max-width:1200px;margin:0 auto;padding:28px 16px 70px}
+h1{margin:0 0 4px;font-size:26px}.lead{color:#666;margin:0 0 26px;max-width:760px}
+.board{border-radius:18px;overflow:hidden;margin-bottom:30px;border:1px solid rgba(0,0,0,.12)}
+.hd{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline;padding:18px 22px}
+.hd h2{margin:0;font-size:22px}.hd span{font-size:13px;opacity:.75}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;padding:0 22px 22px}
+.cell{border-radius:12px;padding:16px;min-height:150px}
+.c4{grid-column:span 4}.c5{grid-column:span 5}.c3{grid-column:span 3}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c12{grid-column:span 12}
+@media(max-width:860px){.c3,.c4,.c5,.c6,.c7,.c8{grid-column:span 12}}
+.sw{display:flex;gap:8px;flex-wrap:wrap}.sw div{flex:1;min-width:70px;height:78px;border-radius:10px;padding:8px;font-size:11px;display:flex;align-items:flex-end;font-family:ui-monospace,Menlo,monospace}
+.kw{display:flex;gap:6px;flex-wrap:wrap}.kw span{border-radius:99px;padding:3px 11px;font-size:12px}
+.mini{display:flex;border-radius:12px;overflow:hidden;height:210px;font-size:12px}
+.mini .s{width:70px;padding:10px 8px}.mini .m{flex:1;padding:10px 12px;display:flex;flex-direction:column;gap:7px}
+.b{border-radius:14px;padding:7px 10px;max-width:80%}
+.pill{display:inline-block;border-radius:99px;padding:3px 10px;font-size:11px}
+.cmp{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:13px}.cmp th,.cmp td{padding:9px 12px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}.cmp th{background:#fafaf8}
+.rec{background:#fff;border:2px solid #1b1b1b;border-radius:14px;padding:16px 20px;margin-top:22px}
+/* A: Tachyon Night */
+.A{background:#0b0a1a;color:#e9e8ff}.A .cell{background:#14122b;border:1px solid #2a2655}
+.A .display{font-family:"Space Grotesk",ui-sans-serif,system-ui;font-size:34px;font-weight:700;letter-spacing:-.02em;background:linear-gradient(90deg,#7c5cff,#22d3ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* B: Calm Community */
+.B{background:#fbf6ee;color:#2a2a26}.B .cell{background:#fff;border:1px solid #eadfcc}
+.B .display{font-family:"Nunito","Trebuchet MS",ui-sans-serif,system-ui;font-size:34px;font-weight:800;color:#0f766e}
+/* C: Editorial Pulse */
+.C{background:#f4f4ef;color:#111}.C .cell{background:#fff;border:1.5px solid #111}
+.C .display{font-family:"Inter Tight",Inter,ui-sans-serif,system-ui;font-size:36px;font-weight:800;letter-spacing:-.04em}
+</style></head><body><div class="wrap">
+<h1>Moodboards · Comunidades de Taquión</h1>
+<p class="lead">Tres direcciones para comparar. Todas comparten la misma estructura (wireframes) y difieren en personalidad. Elegimos una (o una mezcla) antes de pasar a UI de alta fidelidad. Nombres de fuente indicativos; la maqueta usa fuentes del sistema como respaldo.</p>
+
+<!-- A -->
+<section class="board A">
+ <div class="hd"><h2>A · Tachyon Night</h2><span>Oscuro · científico · energético — “más rápido que la luz”</span></div>
+ <div class="grid">
+  <div class="cell c5"><div class="display">Taquión</div><p style="margin:6px 0 12px;opacity:.8">La comunidad que se mueve más rápido que tú.</p>
+   <div class="kw"><span style="background:#241f55">espacio profundo</span><span style="background:#241f55">partículas</span><span style="background:#241f55">neón sutil</span><span style="background:#241f55">dark-first</span><span style="background:#241f55">glow</span></div></div>
+  <div class="cell c7"><div class="sw">
+   <div style="background:#0b0a1a;border:1px solid #2a2655">#0B0A1A<br>fondo</div><div style="background:#14122b;border:1px solid #2a2655">#14122B<br>superficie</div><div style="background:#7c5cff;color:#fff">#7C5CFF<br>primario</div><div style="background:#22d3ee;color:#062a33">#22D3EE<br>acento</div><div style="background:#f472b6;color:#3a0a24">#F472B6<br>alerta suave</div><div style="background:#e9e8ff;color:#14122b">#E9E8FF<br>texto</div></div>
+   <p style="margin:12px 0 0;font-size:13px;opacity:.8">Tipografía: <b>Space Grotesk</b> (títulos) · <b>Inter</b> (UI) · <b>JetBrains Mono</b> (eventos/datos)</p></div>
+  <div class="cell c8"><div class="mini" style="background:#0b0a1a;border:1px solid #2a2655"><div class="s" style="background:#14122b"><div style="width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#7c5cff,#22d3ee)"></div></div><div class="m"><b># general</b><div class="b" style="background:#1d1a40">¿Alguien probó el nuevo flujo?</div><div class="b" style="background:#7c5cff;color:#fff;align-self:flex-end">Sí, funciona genial 🚀</div><span class="pill" style="background:#0e3a44;color:#22d3ee">🔥 12 · hilo 8</span></div></div></div>
+  <div class="cell c4"><b>Ideal si…</b><p style="font-size:13px;opacity:.85;margin:6px 0 0">La marca es tecnológica/avanzada, el público joven-adulto y quieres diferenciarte de WhatsApp. Riesgo: más “frío”, requiere cuidar contraste y modo claro.</p></div>
+ </div>
+</section>
+
+<!-- B -->
+<section class="board B">
+ <div class="hd"><h2>B · Calm Community</h2><span>Cálido · familiar · cercano — transición suave desde WhatsApp</span></div>
+ <div class="grid">
+  <div class="cell c5"><div class="display">Taquión</div><p style="margin:6px 0 12px;color:#6b665c">Tu comunidad, en casa. Como WhatsApp, pero mejor.</p>
+   <div class="kw"><span style="background:#e7f5f2;color:#0f766e">cálido</span><span style="background:#e7f5f2;color:#0f766e">redondeado</span><span style="background:#e7f5f2;color:#0f766e">humano</span><span style="background:#e7f5f2;color:#0f766e">light-first</span><span style="background:#e7f5f2;color:#0f766e">amigable</span></div></div>
+  <div class="cell c7"><div class="sw">
+   <div style="background:#fbf6ee;border:1px solid #eadfcc">#FBF6EE<br>fondo</div><div style="background:#fff;border:1px solid #eadfcc">#FFFFFF<br>superficie</div><div style="background:#0f766e;color:#fff">#0F766E<br>primario</div><div style="background:#f59e0b;color:#3a2600">#F59E0B<br>acento</div><div style="background:#dcf8c6;color:#1f3d0e">#DCF8C6<br>burbuja propia</div><div style="background:#2a2a26;color:#fff">#2A2A26<br>texto</div></div>
+   <p style="margin:12px 0 0;font-size:13px;color:#6b665c">Tipografía: <b>Nunito</b> (títulos) · <b>Inter</b> (UI) · <b>IBM Plex Mono</b> (datos)</p></div>
+  <div class="cell c8"><div class="mini" style="background:#fbf6ee;border:1px solid #eadfcc"><div class="s" style="background:#fff;border-right:1px solid #eadfcc"><div style="width:26px;height:26px;border-radius:50%;background:#0f766e"></div></div><div class="m"><b># general</b><div class="b" style="background:#fff;border:1px solid #eadfcc">¿Alguien probó el nuevo flujo?</div><div class="b" style="background:#dcf8c6;align-self:flex-end">Sí, funciona genial 🙌</div><span class="pill" style="background:#fff1d6;color:#8a5a00">🔥 12 · hilo 8</span></div></div></div>
+  <div class="cell c4"><b>Ideal si…</b><p style="font-size:13px;color:#6b665c;margin:6px 0 0">El público viene de WhatsApp y no es muy técnico: reduce la fricción del cambio. Riesgo: se parece a WhatsApp y puede costar diferenciarse como producto propio.</p></div>
+ </div>
+</section>
+
+<!-- C -->
+<section class="board C">
+ <div class="hd"><h2>C · Editorial Pulse</h2><span>Contraste alto · datos primero — herramienta seria y clara (afín a Chatwoot/Linear)</span></div>
+ <div class="grid">
+  <div class="cell c5"><div class="display">Taquión</div><p style="margin:6px 0 12px;color:#555">Comunidad medible. Sin ruido.</p>
+   <div class="kw"><span style="background:#111;color:#d7ff3a">minimal</span><span style="background:#111;color:#d7ff3a">tipográfico</span><span style="background:#111;color:#d7ff3a">bordes marcados</span><span style="background:#111;color:#d7ff3a">data-forward</span></div></div>
+  <div class="cell c7"><div class="sw">
+   <div style="background:#f4f4ef;border:1.5px solid #111">#F4F4EF<br>fondo</div><div style="background:#fff;border:1.5px solid #111">#FFFFFF<br>superficie</div><div style="background:#111;color:#fff">#111111<br>primario</div><div style="background:#d7ff3a;color:#111">#D7FF3A<br>acento</div><div style="background:#2563eb;color:#fff">#2563EB<br>enlace/evento</div><div style="background:#ef4444;color:#fff">#EF4444<br>riesgo</div></div>
+   <p style="margin:12px 0 0;font-size:13px;color:#555">Tipografía: <b>Inter Tight</b> (títulos) · <b>Inter</b> (UI) · <b>Geist Mono</b> (datos)</p></div>
+  <div class="cell c8"><div class="mini" style="background:#f4f4ef;border:1.5px solid #111"><div class="s" style="background:#111"><div style="width:26px;height:26px;border-radius:6px;background:#d7ff3a"></div></div><div class="m"><b># general</b><div class="b" style="background:#fff;border:1.5px solid #111;border-radius:6px">¿Alguien probó el nuevo flujo?</div><div class="b" style="background:#111;color:#fff;align-self:flex-end;border-radius:6px">Sí, funciona genial</div><span class="pill" style="background:#d7ff3a;color:#111;border:1.5px solid #111">12 reacciones · hilo 8</span></div></div></div>
+  <div class="cell c4"><b>Ideal si…</b><p style="font-size:13px;color:#555;margin:6px 0 0">El foco es la medición y el panel admin, y quieres una UI sobria y rápida de construir. Riesgo: menos emocional para la experiencia del miembro.</p></div>
+ </div>
+</section>
+
+<h2 style="margin:30px 0 10px">Comparativa rápida</h2>
+<table class="cmp"><tr><th></th><th>A · Tachyon Night</th><th>B · Calm Community</th><th>C · Editorial Pulse</th></tr>
+<tr><th>Emoción</th><td>Futurista, aspiracional</td><td>Cercana, familiar</td><td>Seria, eficiente</td></tr>
+<tr><th>Fricción vs WhatsApp</th><td>Media</td><td><b>Baja</b></td><td>Media</td></tr>
+<tr><th>Diferenciación de marca</th><td><b>Alta</b></td><td>Baja–media</td><td>Media</td></tr>
+<tr><th>Panel admin / datos</th><td>Bueno (dark)</td><td>Correcto</td><td><b>Excelente</b></td></tr>
+<tr><th>Costo de implementación</th><td>Medio (glows, modo claro)</td><td>Bajo</td><td><b>Bajo</b></td></tr></table>
+
+<div class="rec"><b>Recomendación inicial:</b> <b>mezcla B + C</b> — miembro con la calidez y familiaridad de B (minimiza el abandono al migrar desde WhatsApp) y admin con la claridad de C (dashboards y tablas). Reservar A para la landing/marca si se busca más diferenciación. Es una propuesta para discutir, no una decisión: ver <code>docs/adr/ADR-003-direccion-visual.md</code> (estado: pendiente).</div>
+</div></body></html>

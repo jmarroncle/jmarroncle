@@ -1,0 +1,35 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WF 07 · Integraciones y salud de datos</title><link rel="stylesheet" href="wf.css"></head><body>
+<nav class="top"><b>Taquión · WF</b><a href="index.html">Índice</a><a href="01-inbox.html">01 Inbox</a><a href="02-comunidad.html">02 Comunidad</a><a href="03-metricas.html">03 Métricas</a><a href="04-onboarding.html">04 Onboarding</a><a href="05-miembro.html">05 Miembro 360</a><a href="06-automatizaciones.html">06 Automatizaciones</a><a class="on" href="07-integraciones.html">07 Integraciones</a><a href="08-mobile.html">08 Mobile</a></nav>
+<div class="wrap">
+<h1>07 · Integraciones y salud de la medición (admin)</h1>
+<p class="sub">Un solo lugar para ver si PostHog, GA4, Windsor.ai, ManyChat y Chatwoot están conectados y si los eventos llegan completos.</p>
+<div class="frame tall rel" style="flex-direction:column">
+  <div class="pad bd-b row between"><span class="b">Ajustes › Integraciones</span><span class="btn sm">Ver tracking plan</span></div>
+  <div class="scroll grow pad" style="background:#fafaf8">
+    <div class="row gap" style="flex-wrap:wrap;align-items:stretch">
+      <div class="card grow" style="min-width:220px;flex:1"><div class="row between"><b>PostHog</b><span class="chip" style="background:var(--ok)">● Conectado</span></div><div class="xs mute" style="margin:4px 0 8px">Analítica de producto · eventos, funnels, cohortes</div><div class="sm">Último evento: hace 3 s<br>Eventos 24 h: 48.210</div><div class="btn sm" style="margin-top:8px">Configurar</div></div>
+      <div class="card grow" style="min-width:220px;flex:1"><div class="row between"><b>Google Analytics 4</b><span class="chip" style="background:var(--ok)">● Conectado</span></div><div class="xs mute" style="margin:4px 0 8px">Adquisición · GTM + Measurement Protocol</div><div class="sm">Eventos server-side: 5 de 5<br>Conversión: <span class="evt">member_activated</span></div><div class="btn sm" style="margin-top:8px">Configurar</div></div>
+      <div class="card grow" style="min-width:220px;flex:1"><div class="row between"><b>Windsor.ai</b><span class="chip" style="background:var(--warn)">● Parcial</span></div><div class="xs mute" style="margin:4px 0 8px">Atribución y datos de pauta → BigQuery/Looker</div><div class="sm">Fuentes: Meta Ads ✓ · GA4 ✓ · Google Ads ✗<br>Sync: hace 2 h</div><div class="btn sm" style="margin-top:8px">Conectar fuente</div></div>
+      <div class="card grow" style="min-width:220px;flex:1"><div class="row between"><b>ManyChat</b><span class="chip" style="background:var(--ok)">● Conectado</span></div><div class="xs mute" style="margin:4px 0 8px">WhatsApp / IG · captación y avisos</div><div class="sm">Webhook: OK<br>Contactos vinculados: 94%</div><div class="btn sm" style="margin-top:8px">Configurar</div></div>
+      <div class="card grow" style="min-width:220px;flex:1"><div class="row between"><b>Chatwoot</b><span class="chip" style="background:var(--ok)">● Conectado</span></div><div class="xs mute" style="margin:4px 0 8px">Bandeja de soporte / DMs 1:1</div><div class="sm">Inboxes: 2<br>Agentes: 4</div><div class="btn sm" style="margin-top:8px">Configurar</div></div>
+    </div>
+    <div class="row gap" style="margin-top:12px;flex-wrap:wrap;align-items:stretch">
+      <div class="card" style="flex:2;min-width:380px"><div class="b sm">Depurador de eventos (en vivo)</div>
+        <table class="t" style="margin-top:6px"><tr><th>Hora</th><th>Evento</th><th>PostHog</th><th>GA4</th><th>Props</th></tr>
+          <tr><td>10:42:11</td><td><span class="evt">message_sent</span></td><td>✓</td><td>—</td><td>completas</td></tr>
+          <tr><td>10:42:07</td><td><span class="evt">member_joined</span></td><td>✓</td><td>✓</td><td>completas</td></tr>
+          <tr><td>10:41:58</td><td><span class="evt">reaction_added</span></td><td>✓</td><td>—</td><td>completas</td></tr>
+          <tr><td>10:41:40</td><td><span class="evt">member_activated</span></td><td>✓</td><td>✗ error 400</td><td>falta client_id</td></tr></table></div>
+      <div class="card" style="flex:1;min-width:280px"><div class="b sm">Cobertura del tracking plan</div>
+        <div class="row" style="margin:8px 0"><div class="line grow" style="height:12px;background:linear-gradient(90deg,#555 87%,#e3e3de 87%)"></div><b>87%</b></div>
+        <div class="sm">26 de 30 eventos recibidos en los últimos 7 días.<br><span class="mute">Faltan:</span> <span class="evt">poll_voted</span> <span class="evt">resource_opened</span> +2</div></div>
+    </div>
+  </div>
+  <span class="pin" style="left:-12px;top:70px">1</span><span class="pin" style="left:-12px;top:300px">2</span><span class="pin" style="left:-12px;top:400px">3</span>
+</div>
+<div class="notes">
+ <div class="note"><span class="n">1</span><b>Estado por integración</b> con una acción clara para arreglar lo parcial.</div>
+ <div class="note"><span class="n">2</span><b>Depurador</b>: verifica que cada evento llegue a PostHog y GA4 (la causa #1 de “datos que no cuadran”).</div>
+ <div class="note"><span class="n">3</span><b>Cobertura del tracking plan</b>: compara lo definido en el spec con lo que realmente llega.</div>
+</div>
+</div></body></html>
